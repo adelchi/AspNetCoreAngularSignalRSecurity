@@ -1,4 +1,2 @@
 @echo off
-
-
-rem call concurrently "cmd /k cd SecurityAspNetCoreSignalR & npm start"
+concurrently "SecurityAspNetCoreSignalR\start.cmd" "StsServer\start.cmd" "ApiServer\start.cmd" 
