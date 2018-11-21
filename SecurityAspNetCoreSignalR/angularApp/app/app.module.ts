@@ -24,7 +24,7 @@ import {
 
 export function loadConfig(oidcConfigService: OidcConfigService) {
     console.log('APP_INITIALIZER STARTING');
-    return () => oidcConfigService.load(`${window.location.origin}/api/ClientAppSettings`);
+    return () => oidcConfigService.load(`http://localhost:5000/api/ClientAppSettings`);
 }
 @NgModule({
     imports: [

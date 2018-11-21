@@ -69,7 +69,7 @@ export class DirectMessagesService {
         if (token !== '') {
             tokenValue = '?token=' + token;
         }
-        const url = 'https://localhost:44390/';
+        const url = 'http://localhost:44390/';
 
         this._hubConnection = new signalR.HubConnectionBuilder()
             .withUrl(`${url}usersdm${tokenValue}`)

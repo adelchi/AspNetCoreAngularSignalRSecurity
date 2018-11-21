@@ -62,14 +62,14 @@ namespace StsServer
                     AlwaysIncludeUserClaimsInIdToken = true,
                     RedirectUris = new List<string>
                     {
-                        "https://localhost:44311",
+                        "http://localhost:44311",
                         "https://localhost:44395"
 
                     },
                     PostLogoutRedirectUris = new List<string>
                     {
-                        "https://localhost:44311/unauthorized",
-                        "https://localhost:44311",
+                        "http://localhost:44311/unauthorized",
+                        "http://localhost:44311",
                         "https://localhost:44395/unauthorized",
                         "https://localhost:44395"
                     },
@@ -77,7 +77,9 @@ namespace StsServer
                     {
                         "https://localhost:44311",
                         "http://localhost:44311",
-                        "https://localhost:44395"
+                        "https://localhost:44395",
+                        "http://localhost:8080",
+                        "https://localhost:8080"
                     },
                     AllowedScopes = new List<string>
                     {
